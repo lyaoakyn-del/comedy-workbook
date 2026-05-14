@@ -189,3 +189,5 @@ MIT — use freely, adapt for your own creative process.
 ---
 
 *Built by a stand-up comic who got tired of losing good ideas.*
+
+*Joke structure principles informed by [The Comedy Bible](https://www.judycarter.com/) (Judy Carter) and standard stand-up craft.*
