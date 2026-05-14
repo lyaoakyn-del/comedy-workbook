@@ -85,10 +85,45 @@ When reviewing a batch of material: identify the top 3 strongest bits, the 3 mos
 
 ## Working with This Workbook
 
+### Navigation
+
+Always start with `wiki/INDEX.md` — it's the compiled entry point.
+From there, go to the relevant section hub. Only open source files in `workbook/` if specifically asked.
+
 Material lives in these stages:
-- `2-ideas/` — raw observations, morning notes, voice memo transcriptions
-- `3-in-development/` — jokes being actively worked on
-- `4-ready/` — tested material that works (laughed at 3+ times on stage)
-- `5-setlists/` — assembled sets
+- `workbook/2-ideas/` — raw observations, morning notes, voice memo transcriptions
+- `workbook/3-in-development/` — jokes being actively worked on
+- `workbook/4-ready/` — tested material that works (laughed at 3+ times on stage)
+- `workbook/5-setlists/` — assembled sets
+
+The compiled wiki reflects the current state of this pipeline:
+- `wiki/material-index.md` — all bits by stage and theme
+- `wiki/morning-notes-hub.md` — patterns from raw notes
+- `wiki/theme-index.md` — cross-cutting themes and callback map
+- `wiki/setlist-index.md` — performance history
 
 When analyzing material, reference these stages. Help the comedian decide when something is ready to move forward — or when it should be shelved.
+
+---
+
+## Compile Mode
+
+When asked to "compile" or "update the wiki":
+
+1. Read the source files specified (or all recently modified ones)
+2. Update the relevant wiki section hub — do not copy source verbatim, distill
+3. Update `wiki/INDEX.md` date and file counts
+4. Flag anything stale, inconsistent, or stuck
+
+**Compile rules:**
+- Wiki entries are summaries, not copies
+- Preserve the comedian's voice in any quoted material
+- Do not invent material — only compile what exists
+- Mark stale items (no update in 30+ days) explicitly
+
+**Compile prompt to give AI:**
+```
+Read [specific files or folder]. Update wiki/[relevant hub].
+Add new items, update statuses, flag anything stale.
+Do not invent. Only compile what exists.
+```
