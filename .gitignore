@@ -1,0 +1,20 @@
+# Personal content — never commit your actual material
+workbook/2-ideas/morning-notes/*.md
+workbook/2-ideas/audio-notes/*.md
+workbook/3-in-development/**/*.md
+workbook/4-ready/**/*.md
+workbook/5-setlists/**/*.md
+workbook/6-performance-analysis/*.md
+
+# Keep .gitkeep files
+!**/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/cache/
+.obsidian/plugins/
